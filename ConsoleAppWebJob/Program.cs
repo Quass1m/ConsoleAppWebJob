@@ -12,8 +12,13 @@ namespace ConsoleAppWebJob
             long i = 0;
             while (true)
             {
-                WriteLine($"While loop at {++i} pass");
+                WriteLine($"While loop at pass {++i}");
                 Sleep(1000);
+                if (i == 30)
+                {
+                    WriteLine("The program will quit");
+                    return;
+                }
             }
         }
     }
