@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using static System.Console;
+using static System.Threading.Thread;
 
 namespace ConsoleAppWebJob
 {
@@ -10,6 +7,14 @@ namespace ConsoleAppWebJob
     {
         static void Main(string[] args)
         {
+            WriteLine("Main executed");
+
+            long i = 0;
+            while (true)
+            {
+                WriteLine($"While loop at {++i} pass");
+                Sleep(1000);
+            }
         }
     }
 }
